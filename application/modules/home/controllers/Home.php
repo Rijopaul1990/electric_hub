@@ -8,7 +8,7 @@ class Home extends My_Controller{
         ]);
     }
     function index(){
-        $this->login->loginTemplateView();
+        $this->login->login();
     }
 
     function createUser(){

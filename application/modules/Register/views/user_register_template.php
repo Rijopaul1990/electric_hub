@@ -1,3 +1,4 @@
+
 <body class="vertical-layout vertical-menu-modern 1-column  navbar-sticky footer-static bg-full-screen-image  blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
     <!-- BEGIN: Content-->
     <div class="app-content content">
@@ -23,28 +24,29 @@
                                             <p> <small> Please enter your details to sign up and be part of our great community</small>
                                             </p>
                                         </div>
+                                        <?php echo $this->session->flashdata('user_creation_success'); ?>
                                         <div class="card-content">
                                             <div class="card-body">
-                                                <form action="index.html">
+                                                <form action="<?php echo base_url(); ?>Register/saveNewUser" method="post">
                                                     <div class="form-row">
                                                         <div class="form-group col-md-6 mb-50">
                                                             <label for="inputfirstname4">first name</label>
-                                                            <input type="text" class="form-control" id="inputfirstname4" placeholder="First name">
+                                                            <input type="text" name="first_name" class="form-control" id="inputfirstname4" placeholder="First name">
                                                         </div>
                                                         <div class="form-group col-md-6 mb-50">
                                                             <label for="inputlastname4">last name</label>
-                                                            <input type="text" class="form-control" id="inputlastname4" placeholder="Last name">
+                                                            <input type="text" name="last_name" class="form-control" id="inputlastname4" placeholder="Last name">
                                                         </div>
                                                     </div>
                                                     <div class="form-group mb-50">
                                                         <label class="text-bold-600" for="exampleInputUsername1">username</label>
-                                                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username"></div>
+                                                        <input type="text" name="user_name" class="form-control" id="exampleInputUsername1" placeholder="Username"></div>
                                                     <div class="form-group mb-50">
                                                         <label class="text-bold-600" for="exampleInputEmail1">Email address</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address"></div>
+                                                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email address"></div>
                                                     <div class="form-group mb-2">
                                                         <label class="text-bold-600" for="exampleInputPassword1">Password</label>
-                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                                     </div>
                                                     <button type="submit" class="btn btn-primary glow position-relative w-100">SIGN UP<i id="icon-arrow" class="bx bx-right-arrow-alt"></i></button>
                                                 </form>
@@ -56,7 +58,7 @@
                                 </div>
                                 <!-- image section right -->
                                 <div class="col-md-6 d-md-block d-none text-center align-self-center p-3">
-                                    <img class="img-fluid" src="../../../app-assets/images/pages/register.png" alt="branding logo">
+                                    <img class="img-fluid" src="<?php echo base_url();?>assets/images/register.png" alt="branding logo">
                                 </div>
                             </div>
                         </div>
