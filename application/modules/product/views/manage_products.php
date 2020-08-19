@@ -2,6 +2,7 @@
 <section id="column-selectors">
                     <div class="row">
                         <div class="col-12">
+                        <?php echo $this->session->flashdata('cat_success'); ?>
                             <div class="card">
                                 <div class="card-content">
                                     <div class="card-body card-dashboard">

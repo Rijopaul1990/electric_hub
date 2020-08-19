@@ -27,7 +27,7 @@
                                         <?php echo $this->session->flashdata('user_creation_success'); ?>
                                         <div class="card-content">
                                             <div class="card-body">
-                                                <form action="<?php echo base_url(); ?>Register/saveNewUser" method="post">
+                                                <form action="<?php echo base_url(); ?>Register/createAdmin" method="post">
                                                     <div class="form-row">
                                                         <div class="form-group col-md-6 mb-50">
                                                             <label for="inputfirstname4">first name</label>

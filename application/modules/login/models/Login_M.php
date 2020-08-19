@@ -7,7 +7,7 @@ class Login_M extends CI_Model{
 
     public function checkLogin($username, $password){
         $this->db->select('*')
-                 ->from('users')
+                 ->from('admin')
                  ->where('user_name', $username)
                  ->where('password', $password);
         $query = $this->db->get();

@@ -6,7 +6,7 @@ class Register_m extends CI_Model{
     }
 
     public function saveNewUser($data = null){
-        $result = $this->db->insert('users', $data);
+        $result = $this->db->insert('admin', $data);
         return $result;
     }
 }

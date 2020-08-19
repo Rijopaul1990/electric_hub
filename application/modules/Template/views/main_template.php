@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/style.css">
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/datatables.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
@@ -264,7 +265,7 @@
 <!-- END: Body-->
 
 </html>
-    
+
 <script src="<?php echo base_url();?>assets/js/vendors.min.js"></script>
     <script src="<?php echo base_url();?>assets/js/LivIconsEvo.tools.js"></script>
     <script src="<?php echo base_url();?>assets/js/LivIconsEvo.defaults.js"></script>
